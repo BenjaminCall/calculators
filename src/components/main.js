@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import '../styles/main.css';
+// import ClickCount from './clicker';
+import CompoundCalc from './compound';
 
 export default class Main extends Component {
 
   constructor(props) {
     super(props);
-    this.state = {
-      count: 0
-    }
   }
 
+          // <ClickCount />
   render() {
     return (
       <div className="App">
@@ -17,8 +17,7 @@ export default class Main extends Component {
           <p>
             There is going to be a lot of different types of calculator functions at some point...
           </p>
-          <button onClick={() => this.setState({count: this.state.count + 1})}> Clicker</button>
-          <div> {this.state.count} </div>
+          <CompoundCalc />
         </header>
       </div>
     );
